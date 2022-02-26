@@ -47,6 +47,31 @@ ul {
   color: white;
 }
 
+.btn {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 0.5rem 1.75rem;
+  border: 2px solid transparent;
+  border-radius: 0.25rem;
+  display: inline-block;
+  color: #fff;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #ee1e46;
+  transition: all 0.3;
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.position-relative {
+  position: relative;
+}
+
 .main-header {
   padding: 1.5rem 0;
   position: absolute;
@@ -65,6 +90,38 @@ ul {
 
 .main-header .logo img {
   width: 100%;
+}
+
+.main-header .dropdown-items {
+  background-color: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 40px;
+  display: none;
+}
+
+.main-header .dropdown-items.open {
+  display: block;
+}
+
+.main-header .dropdown-items li a {
+  color: black !important;
+}
+
+.main-header .dropdown-items li {
+  display: block !important;
+}
+
+.main-header .dropdown-items li:hover {
+  background-color: #f1f1f1;
+}
+
+.main-header .dropdown-items li:first-child {
+  border-radius: 3px 3px 0 0;
+}
+
+.main-header .dropdown-items li:last-child {
+  border-radius: 0 0 3px 3px;
 }
 
 .main-header .menu li {
@@ -86,4 +143,59 @@ ul {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/hero.jpg") no-repeat center / cover;
   min-height: 100vh;
+}
+
+.hero .hero-row {
+  min-height: 100vh;
+  flex-direction: row-reverse;
+}
+
+.hero .hero-content {
+  flex-basis: 50%;
+}
+
+.hero .hero-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.hero .hero-content p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
+}
+
+.hero-content .countdown {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-content .countdown .countdown-block {
+  margin-left: 60px;
+  font-weight: 700;
+}
+
+.hero-content .countdown .countdown-block .number {
+  display: block;
+  font: size 2rem;
+  font-weight: normal;
+}
+
+.team-last-match {
+  background-color: #0d0f13;
+  border-radius: 10px;
+  margin-top: -80px;
+  color: white;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.team-last-match .home,
+.team-last-match .away {
+  flex-grow: 1;
+  flex-basis: 50%;
+  padding: 30px;
+}
+
+.team-last-match .team-detail img {
+  width: 100%`;
 }

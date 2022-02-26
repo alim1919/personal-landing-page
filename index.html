@@ -23,8 +23,15 @@
                         <nav>
                             <ul>
                                 <li><a href="#" class="active">صفحه اصلی</a></li>
-                                <li><a href="#">بازی‌ها</a></li>
-                                <li><a href="#">بازیکنان</a></li>
+                                <li class="position-relative dropdown"><a href="#">بازی‌ها</a>
+                                    <ul class="dropdown-items">
+                                        <li><a href="#">داخلی</a></li>
+                                        <li><a href="#">خارجی</a></li>
+                                    </ul>
+                                
+                                </li>
+                                <li><a href="#">بازیکنان</a>  
+                                </li>
                                 <li><a href="#">هوارادی</a></li>
                                 <li><a href="#">تماس با باشگاه</a></li>
                             </ul>
@@ -36,43 +43,63 @@
 
         <section class="hero">
             <div class="container">
-                <div>
-                    <div>
-                        <h1>برنامه بازی آینده</h1>
+                <div class="hero-row d-flex align-item-center
+                    ">
+                    <div class="hero-content">
+                        <h1 class="text-white">برنامه بازی آینده</h1>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis fugiat ipsum dolorem perferendis error impedit consequatur tempora asperiores. Incidunt, officiis maxime culpa architecto ad reprehenderit consectetur laborum obcaecati nesciunt excepturi.</p>
-                  <div>
-                      <span>
-                          <span>12</span>
+                  <div class="countdown d-flex">
+                      <span class="countdown-block">
+                          <span class="number">12</span>
                           روز
                       </span>
 
-                      <span>
-                        <span>12</span>
+                      <span class="countdown-block">
+                        <span class="number">12</span>
                 ساعت
                     </span>
 
-                    <span>
-                        <span>12</span>
+                    <span class="countdown-block">
+                        <span class="number">12</span>
                         دقیقه
                     </span>
 
-                    <span>
-                        <span>12</span>
+                    <span class="countdown-block">
+                        <span class="number" > 12</span>
                         ثانیه
                     </span>
 
                   </div>
                   <div>
-                      <a href="#">رزرو بلیت</a>
-                      <a href="#">اطلاعات مسابقه</a>
+                      <a href="#" class="btn btn-primary ">رزرو بلیت</a>
+                      <a href="#" class="btn">اطلاعات مسابقه</a>
                   </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="container">
+<div class="team-last-match d-flex">
+    <div class="home"><div class="team-detail">
+        <img src="./images/logo.png" alt="">
+        <h3>پرسپولیس</h3>
+    </div></div>
+    <div class="score">1 - 0</div>
+    <div class="away">
+
+        <div class="team-detail">
+            <img src="./images/esteghlal.png" alt="">
+            <h3>استقلال</h3>
+        </div>
+
+    </div>
+</div>
+
+        </section>
     </div>
 
-   
+   <script src="./js/jq.js"></script>
 <script src="js/app.js" ></script>    
 </body>
 </html>
